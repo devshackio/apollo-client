@@ -8,9 +8,7 @@ import {
   GraphQLResult,
 } from 'graphql';
 
-import mapValues = require('lodash/mapValues');
-import cloneDeep = require('lodash/cloneDeep');
-import assign = require('lodash/assign');
+import { mapValues, cloneDeep, assign } from 'lodash';
 
 import { replaceQueryResults } from './replaceQueryResults';
 

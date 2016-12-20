@@ -8,9 +8,7 @@ import {
   Deduplicator,
 } from '../transport/Deduplicator';
 
-import forOwn = require('lodash/forOwn');
-import isEqual = require('lodash/isEqual');
-import assign = require('lodash/assign');
+import { forOwn, isEqual, assign } from 'lodash';
 
 import {
   ApolloStore,
@@ -590,7 +588,6 @@ export class QueryManager {
     reject: (error: Error) => void) {
     this.fetchQueryPromises[requestId.toString()] = { promise, resolve, reject };
   }
-
 
   // Removes the promise in this.fetchQueryPromises for a particular request ID.
   public removeFetchQueryPromise(requestId: number) {

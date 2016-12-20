@@ -1,7 +1,4 @@
-import isNull = require('lodash/isNull');
-import isUndefined = require('lodash/isUndefined');
-import isObject = require('lodash/isObject');
-import assign = require('lodash/assign');
+import { isNull, isUndefined, isObject, assign } from 'lodash';
 
 import {
   getOperationDefinition,

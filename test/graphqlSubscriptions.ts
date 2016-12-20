@@ -6,7 +6,7 @@ import {
   assert,
 } from 'chai';
 
-import clonedeep = require('lodash/cloneDeep');
+import { cloneDeep } from 'lodash';
 
 import { isSubscriptionResultAction } from '../src/actions';
 
@@ -282,7 +282,7 @@ describe('GraphQL Subscriptions', () => {
       reducer: (previousResult, action) => {
         counter++;
         if (isSubscriptionResultAction(action)) {
-          const newResult = clonedeep(previousResult) as any;
+          const newResult = cloneDeep(previousResult) as any;
           newResult.number++;
           return newResult;
         }
@@ -332,7 +332,7 @@ describe('GraphQL Subscriptions', () => {
   //       subscription: commentsSub,
   //       variables: commentsVariables,
   //       updateQuery: (prev, updateOptions) => {
-  //         const state = clonedeep(prev) as any;
+  //         const state = cloneDeep(prev) as any;
   //         // prev is that data field of the query result
   //         // updateOptions.subscriptionResult is the result entry from the subscription result
   //         state.entry.comments = [...state.entry.comments, ...(updateOptions.subscriptionResult as any).entry.comments];
