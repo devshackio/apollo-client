@@ -18,7 +18,8 @@ import {
   GraphQLError,
 } from 'graphql';
 
-import { assign, isEqual } from 'lodash';
+import assign from 'lodash/assign';
+import isEqual from 'lodash/isEqual';
 
 export interface QueryStore {
   [queryId: string]: QueryStoreValue;

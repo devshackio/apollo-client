@@ -4,7 +4,10 @@ import {
   FragmentDefinition,
 } from 'graphql';
 
-import { assign, countBy, identity, uniq } from 'lodash';
+import assign from 'lodash/assign';
+import countBy from 'lodash/countBy';
+import identity from 'lodash/identity';
+import uniq from 'lodash/uniq';
 
 export function getMutationDefinition(doc: Document): OperationDefinition {
   checkDocument(doc);

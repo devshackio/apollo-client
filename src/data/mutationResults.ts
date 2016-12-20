@@ -8,7 +8,10 @@ import {
   GraphQLResult,
 } from 'graphql';
 
-import { mapValues, cloneDeep, assign } from 'lodash';
+// import { mapValues, cloneDeep, assign } from 'lodash';
+import mapValues from 'lodash/mapValues';
+import cloneDeep from 'lodash/cloneDeep';
+import assign from 'lodash/assign';
 
 import { replaceQueryResults } from './replaceQueryResults';
 

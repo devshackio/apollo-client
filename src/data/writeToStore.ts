@@ -1,4 +1,7 @@
-import { isNull, isUndefined, isObject, assign } from 'lodash';
+import isNull from 'lodash/isNull';
+import isUndefined from 'lodash/isUndefined';
+import isObject from 'lodash/isObject';
+import assign from 'lodash/assign';
 
 import {
   getOperationDefinition,

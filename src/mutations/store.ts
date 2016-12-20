@@ -10,7 +10,7 @@ import {
   SelectionSet,
 } from 'graphql';
 
-import { assign } from 'lodash';
+import assign from 'lodash/assign';
 
 export interface MutationStore {
   [mutationId: string]: MutationStoreValue;

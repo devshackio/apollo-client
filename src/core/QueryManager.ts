@@ -8,7 +8,9 @@ import {
   Deduplicator,
 } from '../transport/Deduplicator';
 
-import { forOwn, isEqual, assign } from 'lodash';
+import forOwn from 'lodash/forOwn';
+import isEqual from 'lodash/isEqual';
+import assign from 'lodash/assign';
 
 import {
   ApolloStore,
