@@ -67,7 +67,7 @@ import {
 
 import {
   ApolloQueryResult,
-} from './core/QueryManager';
+} from './core/types';
 
 import {
   toIdValue,
